@@ -1,0 +1,24 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding.x = 4
+padding.y = 4
+dynamic_padding = true
+startup_mode = "Maximized"
+dynamic_title = true
+decorations_theme_variant = "Dark"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+size = 12
+
+[selection]
+save_to_clipboard = true
+
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-l", "-c", "tmux attach >/dev/null 2>&1 ||  tmux new"]

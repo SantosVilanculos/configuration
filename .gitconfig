@@ -1,0 +1,12 @@
+[core]
+editor = code --wait
+
+[user]
+name = "Santos Vilanculos"
+email = "95357132+SantosVilanculos@users.noreply.github.com"
+
+[init]
+defaultBranch = main
+
+[credential "helperselector"]
+selected = manager-core

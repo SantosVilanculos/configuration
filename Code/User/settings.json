@@ -1,0 +1,127 @@
+{
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor": "none",
+    "telemetry.telemetryLevel": "off",
+    //
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "goto",
+    //
+    "editor.hover.delay": 256,
+    "workbench.activityBar.location": "hidden",
+    "window.menuBarVisibility": "toggle",
+    "window.commandCenter": false,
+    "workbench.tree.indent": 24,
+    "editor.scrollBeyondLastLine": false,
+    "workbench.sideBar.location": "right",
+    "explorer.compactFolders": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.iconTheme": "material-icon-theme",
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "editor.fontSize": 14,
+    "editor.lineHeight": 28,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "workbench.tree.enableStickyScroll": false,
+    //
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    //
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always",
+        "source.sortImports": "always",
+        "source.organizeImports": "always",
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeLens": false,
+    "editor.linkedEditing": true,
+    "editor.formatOnSave": true,
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestionsDelay": 0,
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    },
+    "emmet.syntaxProfiles": {
+        "blade": "html"
+    },
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "vue": "html"
+    },
+    //
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+        "editor.autoClosingBrackets": "always"
+    },
+    "[css][html][javascript][markdown][scss][typescript][vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "open-southeners.laravel-pint"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    // bmewburn.vscode-intelephense-client
+    "php.suggest.basic": false,
+    // christian-kohler.path-intellisense
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+    // dotenv.dotenv-vscode
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        ".env*": "dotenv"
+    },
+    // bradlc.vscode-tailwindcss
+    "tailwindCSS.emmetCompletions": true,
+    // mehedidracula.php-namespace-resolver
+    "namespaceResolver.sortOnSave": false,
+    "namespaceResolver.autoSort": false,
+    // pkief.material-icon-theme
+    "material-icon-theme.folders.theme": "classic",
+    // streetsidesoftware.code-spell-checker
+    // streetsidesoftware.code-spell-checker-portuguese
+    "cSpell.language": "en-GB,pt-PT,lorem",
+    "cSpell.enabledLanguageIds": [
+        "*"
+    ],
+    "cSpell.useGitignore": false,
+    // dotenv.dotenv-vscode
+    "dotenv.enableAutocloaking": false,
+    // ms-python.python
+    // ms-python.vscode-pylance
+    "python.analysis.fixAll": [
+        "source.convertImportFormat",
+        "source.unusedImports"
+    ],
+    //
+    "laravel-pint.enable": true,
+    //
+    "vscode_custom_css.imports": [],
+    // ...
+    "blade.format.enable": true,
+    "security.workspace.trust.untrustedFiles": "open",
+}
