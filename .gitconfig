@@ -10,3 +10,6 @@ defaultBranch = main
 
 [credential "helperselector"]
 selected = manager-core
+
+[push]
+autoSetupRemote = true
