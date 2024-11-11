@@ -113,7 +113,7 @@ alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
 
 alias yt-dlp_video='yt-dlp -S vcodec:h264,res,acodec:m4a'
-alias yt-dlp_audio='yt-dlp -f bestaudio --extract-audio --audio-format mp3'
+alias yt-dlp_audio='yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 320K'
 
 alias pest='./vendor/bin/pest'
 alias pint='./vendor/bin/pint'
