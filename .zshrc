@@ -112,8 +112,10 @@ alias grep='grep --color=auto'
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
 
-alias yt-dlp_video='yt-dlp -S vcodec:h264,res,acodec:m4a'
-alias yt-dlp_audio='yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 320K'
+# alias yt-dlp_video="yt-dlp -S vcodec:h264,res,acodec:m4a -o '%(title)s.%(ext)s'"
+alias yt-dlp_audio="yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 320K -o '%(title)s.%(ext)s'"
+alias yt-dlp_video="yt-dlp -f 'bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]/best[ext=mp4]/best' --embed-thumbnail --add-metadata -o '%(title)s.%(ext)s'"
+alias yt-dlp_video_all="yt-dlp -f 'bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]/best[ext=mp4]/best' --embed-thumbnail --add-metadata --merge-output-format mp4 --write-description --write-info-json --write-thumbnail -o '%(title)s.%(ext)s'"
 
 alias pest='./vendor/bin/pest'
 alias pint='./vendor/bin/pint'
