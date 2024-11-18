@@ -2,6 +2,7 @@
     "workbench.settings.editor": "json",
     "workbench.startupEditor": "none",
     "telemetry.telemetryLevel": "off",
+    "workbench.editor.enablePreview": false,
     //
     "editor.gotoLocation.multipleDeclarations": "goto",
     "editor.gotoLocation.multipleDefinitions": "goto",
