@@ -20,3 +20,7 @@ ln -fns "$WORKDIR/i3" "$HOME/.config/i3"
 
 mkdir -p "$HOME/.config/Code/User"
 ln -fns "$WORKDIR/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
+
+mkdir -p "$HOME/.local/bin"
+chmod +x "$WORKDIR/.local/bin/update"
+ln -fns "$WORKDIR/.local/bin/update" "$HOME/.local/bin/update"
