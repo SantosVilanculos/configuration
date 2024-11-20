@@ -12,29 +12,6 @@ sudo apt-get upgrade -y
 # sudo apt-get dist-upgrade -y
 
 # ---
-sudo apt-get install -y software-properties-common
-sudo apt-get install -y gpg
-sudo apt-get install -y build-essential
-sudo apt-get install -y curl
-sudo apt-get install -y wget
-sudo apt-get install -y zip
-sudo apt-get install -y unzip
-sudo apt-get install -y git
-sudo apt-get install -y gh
-sudo apt-get install -y ffmpeg
-sudo apt-get install -y vlc
-sudo apt-get install -y maim
-sudo apt-get install -y xsel
-sudo apt-get install -y xclip
-sudo apt-get install -y libnss3-tools
-sudo apt-get install -y jq
-sudo apt-get install -y openssl
-sudo apt-get install -y ca-certificates
-sudo apt-get install -y gparted
-sudo apt-get install -y net-tools
-sudo apt-get install -y gnome-tweaks
-
-# ---
 sudo apt-get install -y zsh
 sudo chsh -s "/usr/bin/zsh"
 
@@ -44,6 +21,39 @@ sudo apt install -y gnome-software-plugin-flatpak
 sudo flatpak remote-add --if-not-exists flathub "https://dl.flathub.org/repo/flathub.flatpakrepo"
 
 # ---
+# ---
+sudo apt-get install -y software-properties-common
+sudo apt-get install -y build-essential
+sudo apt-get install -y git
+sudo apt-get install -y gh
+
+sudo apt-get install -y curl
+sudo apt-get install -y wget
+sudo apt-get install -y zip
+sudo apt-get install -y unzip
+
+sudo apt-get install -y ffmpeg
+sudo apt-get install -y vlc
+sudo apt-get install -y maim
+
+sudo apt-get install -y xsel
+sudo apt-get install -y xclip
+sudo apt-get install -y libnss3-tools
+
+sudo apt-get install -y gparted
+sudo apt-get install -y net-tools
+sudo apt-get install -y java-common
+
+sudo apt-get install -y gpg
+sudo apt-get install -y jq
+sudo apt-get install -y openssl
+sudo apt-get install -y ca-certificates
+
+sudo apt-get install -y gnome-tweaks
+sudo apt-get install -y gnome-shell-extensions
+sudo apt-get install -y chrome-gnome-shell
+sudo flatpak install -y flathub com.mattjakeman.ExtensionManager
+
 sudo flatpak install -y flathub it.mijorus.gearlever
 
 # ---
