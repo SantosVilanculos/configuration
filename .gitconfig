@@ -8,8 +8,9 @@ email = "95357132+SantosVilanculos@users.noreply.github.com"
 [init]
 defaultBranch = main
 
-[credential "helperselector"]
-selected = manager-core
+[credential]
+helper = /usr/local/bin/git-credential-manager
+credentialStore = secretservice
 
 [push]
 autoSetupRemote = true
