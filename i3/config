@@ -209,12 +209,16 @@ exec --no-startup-id nitrogen --restore
 # - xclip for clipboard: sudo apt install xclip
 
 # Full screen screenshot: Mod + PrintScreen
-# Saves to ~/Pictures/Screenshots with timestamp filename AND copies to clipboard
-bindsym $mod+Print exec --no-startup-id "maim '$HOME/Pictures/Screenshots/$(date +%Y%m%d%H%M%S).png' && maim | xclip -selection clipboard -t image/png"
+# Saves to ~/Pictures/Screenshots with timestamp filename
+bindsym $mod+Print exec --no-startup-id "maim '$HOME/Pictures/Screenshots/$(date +%Y%m%d%H%M%S).png'"
+# Copies full screen to clipboard
+bindsym $mod+Ctrl+Print exec --no-startup-id "maim | xclip -selection clipboard -t image/png"
 
 # Selected area screenshot: Mod + Shift + S
-# Allows selecting an area, saves to ~/Pictures/Screenshots AND copies to clipboard
-bindsym $mod+Shift+s exec --no-startup-id "maim --select '$HOME/Pictures/Screenshots/$(date +%Y%m%d%H%M%S).png' && maim --select | xclip -selection clipboard -t image/png"
+# Allows selecting an area and saves to ~/Pictures/Screenshots
+bindsym $mod+Shift+s exec --no-startup-id "maim --select '$HOME/Pictures/Screenshots/$(date +%Y%m%d%H%M%S).png'"
+# Copies selected area to clipboard
+bindsym $mod+Ctrl+Shift+s exec --no-startup-id "maim --select | xclip -selection clipboard -t image/png"
 
 # Keyboard layout configuration
 # Sets up US and US International layouts
