@@ -7,13 +7,14 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
 	sudo apt-get autoclean
 	sudo apt-get clean
 
-	composer global update --no-interaction
-
-	npm update -g -y
-
 	python3 -m pip install --upgrade pip
 elif [[ "$OSTYPE" == cygwin* || "$OSTYPE" == msys* ]]; then
 	choco upgrade all -y
 
 	python -m pip install --upgrade pip
 fi
+
+composer global update --no-interaction
+
+npm install -g -y pnpm@latest http-server@latest
+npm update -g -y
