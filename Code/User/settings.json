@@ -67,7 +67,7 @@
     },
     "emmet.includeLanguages": {
         "blade": "html",
-        "vue": "html"
+        // "vue": "html"
     },
     //
     "[blade]": {
@@ -125,4 +125,5 @@
     // ...
     "blade.format.enable": true,
     "security.workspace.trust.untrustedFiles": "open",
+    "git.autofetch": true,
 }
