@@ -16,6 +16,5 @@
 ![](./screenshot.png)
 
 ```sh
-chmod +x ./configuration.sh
-./configuration.sh
+chmod +x ./configuration.sh && ./configuration.sh
 ```
