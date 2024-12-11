@@ -106,6 +106,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # ---
+alias volume="amixer sset Master" # Example: 'valume 100%'
+alias mute="amixer sset Master mute"
+alias unmute="amixer sset Master unmute"
+
+# ---
 alias df='df -h'
 alias free='free -m'
 alias grep='grep --color=auto'
