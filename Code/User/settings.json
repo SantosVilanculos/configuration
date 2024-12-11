@@ -106,9 +106,9 @@
     // streetsidesoftware.code-spell-checker
     // streetsidesoftware.code-spell-checker-portuguese
     "cSpell.language": "en-GB,pt-PT,lorem",
-    "cSpell.enabledLanguageIds": [
-        "*"
-    ],
+    "cSpell.enabledFileTypes": {
+        "*": true
+    },
     "cSpell.useGitignore": false,
     // dotenv.dotenv-vscode
     "dotenv.enableAutocloaking": false,
