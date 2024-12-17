@@ -106,9 +106,9 @@
     // streetsidesoftware.code-spell-checker
     // streetsidesoftware.code-spell-checker-portuguese
     "cSpell.language": "en-GB,pt-PT,lorem",
-    "cSpell.enabledFileTypes": {
-        "*": true
-    },
+    "cSpell.enabledLanguageIds": [
+        "*"
+    ],
     "cSpell.useGitignore": false,
     // dotenv.dotenv-vscode
     "dotenv.enableAutocloaking": false,
@@ -126,4 +126,10 @@
     "blade.format.enable": true,
     "security.workspace.trust.untrustedFiles": "open",
     "git.autofetch": true,
+    "codesnap.showWindowControls": false,
+    "codesnap.backgroundColor": "#ea4335",
+    "codesnap.containerPadding": "5em 3em",
+    "codesnap.realLineNumbers": true,
+    "codesnap.showLineNumbers": false,
+    "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 6px 24px",
 }
