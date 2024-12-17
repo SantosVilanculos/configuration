@@ -1,4 +1,9 @@
 # ---
+if [ -f "$HOME/environment.sh" ]; then
+  source "$HOME/environment.sh"
+fi
+
+# ---
 if [ -d "$HOME/.bin" ]; then
   export PATH="$HOME/.bin:$PATH"
 fi
