@@ -12,8 +12,12 @@ ln -fns "$WORKDIR/.local/bin/update" "$HOME/.local/bin/update"
 ln -fns "$WORKDIR/.gitconfig" "$HOME/.gitconfig"
 
 if [[ "$OSTYPE" == linux-gnu* ]]; then
+    mkdir "$HOME/.config"
+
     ln -fns "$WORKDIR/.zshenv" "$HOME/.zshenv"
     ln -fns "$WORKDIR/.zshrc" "$HOME/.zshrc"
+
+    ln -fns "$WORKDIR/rofi" "$HOME/.config/rofi"
 
     mkdir -p "$HOME/.config/gh"
     ln -fns "$WORKDIR/gh/config.yml" "$HOME/.config/gh/config.yml"

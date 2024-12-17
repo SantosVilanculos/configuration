@@ -1,0 +1,10 @@
+configuration{
+    modi: "run,window,combi";
+    font: "JetBrains Mono 12";
+    icon-theme: "Oranchelo";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    disable-history: false;
+    side-bar-mode: true;
+}
