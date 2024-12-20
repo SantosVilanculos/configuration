@@ -31,6 +31,12 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
     mkdir -p "$HOME/.config/Code/User"
     ln -fns "$WORKDIR/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
 
+    if [ -f /usr/local/bin/mailpit ]; then
+        sudo cp "$WORKDIR/mailpit.service" /etc/systemd/system/mailpit.service
+        sudo systemctl enable mailpit.service
+        sudo systemctl start mailpit.service
+    fi
+
 elif [[ "$OSTYPE" == cygwin* || "$OSTYPE" == msys* ]]; then
     mkdir -p "$HOME/AppData/Roaming/Code/User"
     ln -fns "$WORKDIR/Code/User/settings.json" "$HOME/AppData/Roaming/Code/User/settings.json"

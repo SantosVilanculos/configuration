@@ -1,0 +1,11 @@
+[Unit]
+Description=An email testing tool capturing emails from your application during development.
+
+[Service]
+ExecStart=/usr/local/bin/mailpit
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
