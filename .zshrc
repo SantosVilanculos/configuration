@@ -137,3 +137,5 @@ alias pest='./vendor/bin/pest'
 alias pint='./vendor/bin/pint'
 alias sail='./vendor/bin/sail'
 alias tinker='php artisan tinker'
+
+alias wip="git add . && git commit -m 'wip'"
