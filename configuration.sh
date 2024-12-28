@@ -25,6 +25,7 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
     ln -fns "$WORKDIR/.tmux.conf" "$HOME/.tmux.conf"
 
     ln -fns "$WORKDIR/alacritty" "$HOME/.config/alacritty"
+    ln -fns "$WORKDIR/ghostty" "$HOME/.config/ghostty"
 
     ln -fns "$WORKDIR/i3" "$HOME/.config/i3"
 
