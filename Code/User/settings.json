@@ -22,8 +22,8 @@
     "breadcrumbs.enabled": false,
     "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": false,
-    "editor.fontFamily": "'MonoLisa'",
-    // "editor.fontFamily": "'JetBrains Mono'",
+    // "editor.fontFamily": "'MonoLisa'",
+    "editor.fontFamily": "'JetBrains Mono'",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -54,7 +54,7 @@
     "files.trimTrailingWhitespace": true,
     "files.associations": {
         "*.embeddedhtml": "html",
-        ".env*": "dotenv", // dotenv.dotenv-vscode
+        ".env*": "dotenv",
         "*.qss": "css"
     },
     "editor.codeLens": false,
@@ -64,6 +64,10 @@
     "editor.suggestOnTriggerCharacters": false,
     "editor.tabCompletion": "on",
     "editor.quickSuggestionsDelay": 0,
+    "editor.rulers": [
+        80,
+        120
+    ],
     "editor.quickSuggestions": {
         "other": "off",
         "comments": "off",
@@ -126,13 +130,18 @@
     // open-southeners.laravel-pint
     "laravel-pint.enable": true,
     "laravel-pint.fallbackToGlobalBin": false,
+    // ms-python.black-formatter
+    "black-formatter.importStrategy": "fromEnvironment",
     // adpyke.codesnap
-    "codesnap.backgroundColor": "#d19a66",
-    "codesnap.containerPadding": "1.5rem",
-    "codesnap.realLineNumbers": true,
-    "codesnap.showLineNumbers": false,
-    "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 0.5rem 0.5rem",
+    "codesnap.containerPadding": "3.875rem" /* 62px */,
+    "codesnap.transparentBackground": true,
+    // "codesnap.backgroundColor": "#ff3d00",
+    // "codesnap.showWindowTitle": true,
+    "codesnap.roundedCorners": false,
     "codesnap.showWindowControls": false,
-    "codesnap.target": "window",
+    "codesnap.showLineNumbers": false,
+    "codesnap.realLineNumbers": true,
+    // ritwickdey.liveserver
+    "liveServer.settings.NoBrowser": true,
     // ...
 }
