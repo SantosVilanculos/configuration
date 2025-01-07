@@ -1,0 +1,24 @@
+#!/usr/bin/env zsh
+
+if [[ "$OSTYPE" == linux-gnu* ]]; then
+    sudo apt-get update
+    sudo apt-get upgrade -y
+    sudo apt-get autoremove
+    sudo apt-get autoclean
+    sudo apt-get clean
+
+    flatpak upgrade -y
+
+    python3 -m pip install --upgrade pip
+elif [[ "$OSTYPE" == cygwin* || "$OSTYPE" == msys* ]]; then
+    choco upgrade all -y
+
+    python -m pip install --upgrade pip
+fi
+
+composer global update --no-interaction
+
+npm install -g -y pnpm@latest http-server@latest
+npm update -g -y
+
+code --update-extensions

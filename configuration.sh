@@ -6,8 +6,12 @@ ln -fns "$WORKDIR/.profile" "$HOME/.profile"
 ln -fns "$WORKDIR/.bashrc" "$HOME/.bashrc"
 
 mkdir -p "$HOME/.local/bin"
-chmod +x "$WORKDIR/.local/bin/update"
-ln -fns "$WORKDIR/.local/bin/update" "$HOME/.local/bin/update"
+
+chmod +x "$WORKDIR/bin/update"
+ln -fns "$WORKDIR/bin/update" "$HOME/.local/bin/update"
+
+chmod +x "$WORKDIR/bin/favicon"
+ln -fns "$WORKDIR/bin/favicon" "$HOME/.local/bin/favicon"
 
 ln -fns "$WORKDIR/.gitconfig" "$HOME/.gitconfig"
 
