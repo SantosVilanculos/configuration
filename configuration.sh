@@ -16,8 +16,6 @@ ln -fns "$WORKDIR/bin/favicon" "$HOME/.local/bin/favicon"
 ln -fns "$WORKDIR/.gitconfig" "$HOME/.gitconfig"
 
 if [[ "$OSTYPE" == linux-gnu* ]]; then
-    mkdir "$HOME/.config"
-
     ln -fns "$WORKDIR/.zshenv" "$HOME/.zshenv"
     ln -fns "$WORKDIR/.zshrc" "$HOME/.zshrc"
 
@@ -32,6 +30,8 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
     ln -fns "$WORKDIR/ghostty" "$HOME/.config/ghostty"
 
     ln -fns "$WORKDIR/i3" "$HOME/.config/i3"
+
+    ln -fns "$WORKDIR/nvim" "$HOME/.config/nvim"
 
     mkdir -p "$HOME/.config/Code/User"
     ln -fns "$WORKDIR/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
