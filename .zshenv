@@ -47,3 +47,8 @@ fi
 if [ -f "$HOME/.cargo/env" ]; then
   source "$HOME/.cargo/env"
 fi
+
+# ---
+if [ -d "/opt/nvim/bin" ]; then
+  export PATH="$PATH:/opt/nvim/bin"
+fi
