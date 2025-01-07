@@ -1,29 +1,50 @@
 {
-    "workbench.settings.editor": "json",
-    "workbench.startupEditor": "none",
     "telemetry.telemetryLevel": "off",
-    "workbench.editor.enablePreview": false,
     //
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "toggle",
+    "window.title": "${activeEditorShort}",
+    //
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.tree.enableStickyScroll": false,
+    //
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always",
+        "source.sortImports": "always",
+        "source.organizeImports": "always",
+    },
+    "editor.codeLens": false,
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontSize": 14,
+    "editor.formatOnSave": true,
     "editor.gotoLocation.multipleDeclarations": "goto",
     "editor.gotoLocation.multipleDefinitions": "goto",
     "editor.gotoLocation.multipleImplementations": "goto",
     "editor.gotoLocation.multipleReferences": "goto",
-    //
-    "editor.hover.delay": 256,
-    "workbench.activityBar.location": "hidden",
-    "window.menuBarVisibility": "toggle",
-    "window.commandCenter": false,
-    "workbench.tree.indent": 24,
-    "editor.scrollBeyondLastLine": false,
-    "workbench.sideBar.location": "right",
-    "explorer.compactFolders": false,
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "workbench.iconTheme": "material-icon-theme",
-    "breadcrumbs.enabled": false,
-    "editor.stickyScroll.enabled": false,
+    "editor.lineHeight": 28,
+    "editor.linkedEditing": true,
     "editor.minimap.enabled": false,
-    // "editor.fontFamily": "'MonoLisa'",
-    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "on"
+    },
+    "editor.quickSuggestionsDelay": 0,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.scrollBeyondLastLine": false,
+    "editor.snippetSuggestions": "bottom",
+    "editor.stickyScroll.enabled": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.tabCompletion": "on",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -34,45 +55,26 @@
             }
         ]
     },
-    "editor.fontSize": 14,
-    "editor.lineHeight": 28,
-    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
-    "workbench.tree.enableStickyScroll": false,
     //
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "breadcrumbs.enabled": false,
+    //
+    "explorer.compactFolders": false,
+    //
     "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
     //
     "git.autofetch": "all",
     //
-    "editor.codeActionsOnSave": {
-        "source.fixAll": "always",
-        "source.sortImports": "always",
-        "source.organizeImports": "always",
-    },
-    "emmet.triggerExpansionOnTab": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
     "files.associations": {
         "*.embeddedhtml": "html",
         ".env*": "dotenv",
         "*.qss": "css"
     },
-    "editor.codeLens": false,
-    "editor.linkedEditing": true,
-    "editor.formatOnSave": true,
-    "editor.snippetSuggestions": "bottom",
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.tabCompletion": "on",
-    "editor.quickSuggestionsDelay": 0,
-    "editor.rulers": [
-        80,
-        120
-    ],
-    "editor.quickSuggestions": {
-        "other": "off",
-        "comments": "off",
-        "strings": "on"
-    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    //
+    "emmet.triggerExpansionOnTab": true,
     "emmet.syntaxProfiles": {
         "blade": "html",
         "qss": "css"
