@@ -1,4 +1,5 @@
 initial-command = "tmux attach || tmux new"
+gtk-titlebar = false
 window-padding-x = 4
 window-padding-balance = true
 font-family = "JetBrainsMono Nerd Font"
