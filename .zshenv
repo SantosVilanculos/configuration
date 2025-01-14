@@ -1,4 +1,7 @@
 # ---
+export TERM="xterm-256color"
+
+# ---
 if [ -f "$HOME/private.sh" ]; then
   source "$HOME/private.sh"
 fi
