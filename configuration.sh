@@ -2,7 +2,7 @@
 
 WORKDIR=$(dirname $(realpath "$0"))
 
-ln -fns "$WORKDIR/.profile" "$HOME/.profile"
+ln -fns "$WORKDIR/.bashenv" "$HOME/.bashenv"
 ln -fns "$WORKDIR/.bashrc" "$HOME/.bashrc"
 
 mkdir -p "$HOME/.local/bin"
