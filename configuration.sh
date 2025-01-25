@@ -12,7 +12,11 @@ ln -fns "$WORKDIR/bin/favicon" "$HOME/.local/bin/favicon"
 
 ln -fns "$WORKDIR/.gitconfig" "$HOME/.gitconfig"
 
-if [[ "$OSTYPE" == linux-gnu* ]]; then
+if [[ "$OSTYPE" == linux-android* ]]; then
+  ln -fns "$WORKDIR/.zshenv" "$HOME/.zshenv"
+  ln -fns "$WORKDIR/.zshrc" "$HOME/.zshrc"
+
+elif [[ "$OSTYPE" == linux-gnu* ]]; then
   ln -fns "$WORKDIR/bin/volume" "$HOME/.local/bin/volume"
   ln -fns "$WORKDIR/rofi" "$HOME/.config/rofi"
   ln -fns "$WORKDIR/i3" "$HOME/.config/i3"
