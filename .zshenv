@@ -7,6 +7,10 @@ if [ -f "$HOME/private.sh" ]; then
 fi
 
 # ---
+if [ -d "/usr/sbin" ]; then
+  export PATH="$PATH:/usr/sbin"
+fi
+
 if [ -d "$HOME/.bin" ]; then
   export PATH="$PATH:$HOME/.bin"
 fi
