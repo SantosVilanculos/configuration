@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# $1 = [0...100] | mute | unmute
+
+if [[ $1 =~ ^[0-9]+$ ]] && [[ $1 -ge 0 ]] && [ $1 -le 100 ]; then
+  amixer sset Master "$1%"
+elif [[ $1 == "mute" || $1 == "unmute" ]]; then
+  amixer sset Master "$1"
+fi

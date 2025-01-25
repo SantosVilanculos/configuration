@@ -6,20 +6,19 @@ ln -fns "$WORKDIR/.profile" "$HOME/.profile"
 ln -fns "$WORKDIR/.bashrc" "$HOME/.bashrc"
 
 mkdir -p "$HOME/.local/bin"
-
-chmod +x "$WORKDIR/bin/update"
+chmod +x $WORKDIR/bin/{favicon,update,volume}
 ln -fns "$WORKDIR/bin/update" "$HOME/.local/bin/update"
-
-chmod +x "$WORKDIR/bin/favicon"
 ln -fns "$WORKDIR/bin/favicon" "$HOME/.local/bin/favicon"
 
 ln -fns "$WORKDIR/.gitconfig" "$HOME/.gitconfig"
 
 if [[ "$OSTYPE" == linux-gnu* ]]; then
+  ln -fns "$WORKDIR/bin/volume" "$HOME/.local/bin/volume"
+  ln -fns "$WORKDIR/rofi" "$HOME/.config/rofi"
+  ln -fns "$WORKDIR/i3" "$HOME/.config/i3"
+
   ln -fns "$WORKDIR/.zshenv" "$HOME/.zshenv"
   ln -fns "$WORKDIR/.zshrc" "$HOME/.zshrc"
-
-  ln -fns "$WORKDIR/rofi" "$HOME/.config/rofi"
 
   mkdir -p "$HOME/.config/gh"
   ln -fns "$WORKDIR/gh/config.yml" "$HOME/.config/gh/config.yml"
@@ -28,8 +27,6 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
 
   ln -fns "$WORKDIR/alacritty" "$HOME/.config/alacritty"
   ln -fns "$WORKDIR/ghostty" "$HOME/.config/ghostty"
-
-  ln -fns "$WORKDIR/i3" "$HOME/.config/i3"
 
   ln -fns "$WORKDIR/nvim" "$HOME/.config/nvim"
 
