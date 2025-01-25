@@ -2,7 +2,6 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
-      update_cmd = false,
       window = { position = "right" },
       filesystem = {
         filtered_items = {
