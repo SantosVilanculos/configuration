@@ -9,11 +9,8 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
 
     flatpak upgrade -y
 
-    python3 -m pip install --upgrade pip
 elif [[ "$OSTYPE" == cygwin* || "$OSTYPE" == msys* ]]; then
     choco upgrade all -y
-
-    python -m pip install --upgrade pip
 fi
 
 composer global update --no-interaction
