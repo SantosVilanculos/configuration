@@ -1,5 +1,4 @@
 shell-integration = zsh
-initial-command = "tmux attach || tmux new"
 gtk-titlebar = false
 window-padding-x = 4
 window-padding-y = 4
