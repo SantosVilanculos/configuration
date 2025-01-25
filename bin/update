@@ -15,7 +15,6 @@ fi
 
 composer global update --no-interaction
 
-npm install -g -y pnpm@latest http-server@latest
-npm update -g -y
+npm install -g -y npm@latest pnpm@latest http-server@latest
 
 code --update-extensions
