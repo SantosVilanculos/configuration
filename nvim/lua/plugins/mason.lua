@@ -3,27 +3,18 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        -- *
         "cspell",
-        -- sh
+        -- bash
         "bash-language-server",
-        "shfmt",
         "shellcheck",
+        "shfmt",
+        -- json|jsonc
+        "json-lsp",
+        "jq",
         -- lua
         "lua-language-server",
         "stylua",
-        -- yaml
-        "yaml-language-server",
-        -- json/jsonc
-        "json-lsp",
-        "jq",
-        -- css/html/javacript/typescript
-        "prettier",
-        "html-lsp",
-        "htmlhint",
-        "css-lsp",
-        "tailwindcss-language-server",
-        "typescript-language-server",
-        "vue-language-server",
         -- php
         "intelephense",
         "phpstan",
@@ -34,6 +25,17 @@ return {
         "ruff",
         "isort",
         "black",
+        -- yaml
+        "yaml-language-server",
+        -- css|html|javacript|typescript
+        "prettier",
+        "eslint_d",
+        "html-lsp",
+        "htmlhint",
+        "css-lsp",
+        "tailwindcss-language-server",
+        "typescript-language-server",
+        "vue-language-server",
       },
       automatic_installation = true,
     },
