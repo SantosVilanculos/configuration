@@ -130,6 +130,7 @@ alias video="yt-dlp -S 'vcodec:h264,fps,res:720,acodec:m4a' -o '%(title)s.%(ext)
 # ---
 alias pest='./vendor/bin/pest'
 alias pint='./vendor/bin/pint'
+alias phpstan='./vendor/bin/phpstan'
 alias sail='./vendor/bin/sail'
 alias tinker='php artisan tinker'
 
