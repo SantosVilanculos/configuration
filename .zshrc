@@ -134,4 +134,3 @@ alias phpstan='./vendor/bin/phpstan'
 alias sail='./vendor/bin/sail'
 alias tinker='php artisan tinker'
 
-alias wip="git add . && git commit -m 'wip'"
