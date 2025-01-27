@@ -16,6 +16,16 @@ return {
         typescriptreact = { "prettier" },
         vue = { "prettier" },
       },
+      formatters = {
+        isort = {
+          inherit = true,
+          prepend_args = { "--profile", "black" },
+        },
+        black = {
+          inherit = true,
+          prepend_args = { "--line-length", "120" },
+        },
+      },
     },
   },
   {
