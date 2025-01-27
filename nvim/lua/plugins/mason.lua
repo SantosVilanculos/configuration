@@ -9,6 +9,8 @@ return {
         "bash-language-server",
         "shellcheck",
         "shfmt",
+        -- blade
+        "blade-formatter",
         -- json|jsonc
         "json-lsp",
         "jq",

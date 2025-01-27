@@ -5,6 +5,7 @@ return {
     opts = {
       formatters_by_ft = {
         bash = { "shfmt" },
+        blade = { "blade-formatter" },
         css = { "prettier" },
         html = { "prettier" },
         javascript = { "prettier" },
