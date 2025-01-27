@@ -1,7 +1,10 @@
-shell-integration = zsh
-gtk-titlebar = false
+font-family = "JetBrainsMono Nerd Font"
+font-size = 13
 window-padding-x = 4
 window-padding-y = 4
 window-padding-balance = true
-font-family = "JetBrainsMono Nerd Font"
-font-size = 13
+window-theme = dark
+window-decoration = true
+shell-integration = zsh
+gtk-titlebar = false
+term = "xterm-256color"
