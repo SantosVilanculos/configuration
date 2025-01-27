@@ -1,5 +1,6 @@
 # ---
 export TERM="xterm-256color"
+export WINIT_X11_SCALE_FACTOR=1
 
 # ---
 if [ -f "$HOME/private.sh" ]; then
