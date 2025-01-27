@@ -1,18 +1,5 @@
-<div align="left">
-  <a href="https://github.com/SantosVilanculos/configuration/blob/main/LICENSE">
-    <img
-      src="https://img.shields.io/github/license/SantosVilanculos/configuration"
-      alt="license"
-    />
-  </a>
-  <a href="https://github.com/SantosVilanculos/configuration/commits/main">
-    <img
-      src="https://img.shields.io/github/last-commit/SantosVilanculos/configuration"
-      alt="last commit"
-    />
-  </a>
-</div>
-
+[![last commit](https://img.shields.io/github/last-commit/SantosVilanculos/configuration)](https://github.com/SantosVilanculos/configuration/commits/main)
+[![license](https://img.shields.io/github/license/SantosVilanculos/configuration)](https://github.com/SantosVilanculos/configuration/blob/main/LICENSE)
 ![](./screenshot.png)
 
 ```sh
