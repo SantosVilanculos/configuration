@@ -27,9 +27,11 @@ return {
         "scss",
         "sql",
         "regex",
+        "toml",
         "tsx",
         "typescript",
         "vim",
+        "vue",
         "yaml",
       })
     end,
