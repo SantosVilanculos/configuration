@@ -3,7 +3,7 @@ configuration{
     font: "JetBrains Mono 13";
     icon-theme: "Oranchelo";
     show-icons: true;
-    terminal: "ghostty";
+    terminal: "alacritty";
     drun-display-format: "{icon} {name}";
     disable-history: false;
     side-bar-mode: true;
