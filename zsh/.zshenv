@@ -1,6 +1,8 @@
 # ---
 export TERM="xterm-256color"
 export WINIT_X11_SCALE_FACTOR=1
+export QT_QPA_PLATFORM=xcb
+export MANPAGER="nvim +Man!"
 
 # ---
 if [ -f "$HOME/private.sh" ]; then
