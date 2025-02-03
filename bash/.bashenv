@@ -2,9 +2,8 @@
 export TERM="xterm-256color"
 export WINIT_X11_SCALE_FACTOR=1
 
-# ---
-if [ -f "$HOME/private.sh" ]; then
-    source "$HOME/private.sh"
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+  export QT_QPA_PLATFORM=xcb
 fi
 
 # ---
@@ -20,6 +19,6 @@ if [ -d "$HOME/.local/bin" ]; then
   export PATH="$PATH:$HOME/.local/bin"
 fi
 
-if [ -d "/var/lib/flatpak/exports/bin/" ]; then
+if [ -d "/var/lib/flatpak/exports/bin" ]; then
   export PATH="$PATH:/var/lib/flatpak/exports/bin"
 fi
