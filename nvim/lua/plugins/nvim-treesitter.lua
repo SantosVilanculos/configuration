@@ -36,6 +36,8 @@ return {
       })
     end,
     config = function(_, opts)
+      require("treesitter-context").disable()
+
       local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
       parser_config.blade = {
         install_info = {
