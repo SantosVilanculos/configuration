@@ -17,8 +17,8 @@ elif [[ "$OSTYPE" == cygwin* || "$OSTYPE" == msys* ]]; then
   choco upgrade all -y
 fi
 
-composer global update --no-interaction
-
-npm install -g -y npm@latest pnpm@latest http-server@latest
-
-code --update-extensions
+if [[ "$OSTYPE" == linux-gnu* || "$OSTYPE" == cygwin* || "$OSTYPE" == msys* ]]; then
+  composer global update --no-interaction
+  npm install -g -y npm@latest pnpm@latest http-server@latest
+  code --update-extensions
+fi
