@@ -1,12 +1,14 @@
 # ---
-export TERM="xterm-256color"
-export WINIT_X11_SCALE_FACTOR=1
-export QT_QPA_PLATFORM=xcb
-export MANPAGER="nvim +Man!"
+if [ -s "$HOME/private.sh" ]; then
+  source "$HOME/private.sh"
+fi
 
 # ---
-if [ -f "$HOME/private.sh" ]; then
-  source "$HOME/private.sh"
+export TERM="xterm-256color"
+export WINIT_X11_SCALE_FACTOR=1
+
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+  export QT_QPA_PLATFORM=xcb
 fi
 
 # ---
@@ -22,12 +24,12 @@ if [ -d "$HOME/.local/bin" ]; then
   export PATH="$PATH:$HOME/.local/bin"
 fi
 
-if [ -d "/var/lib/flatpak/exports/bin/" ]; then
+if [ -d "/var/lib/flatpak/exports/bin" ]; then
   export PATH="$PATH:/var/lib/flatpak/exports/bin"
 fi
 
 # ---
-if [ -f "$HOME/.local/bin/zoxide" ]; then
+if [ -x "/usr/bin/zoxide" ] || [ -x "$HOME/.local/bin/zoxide" ]; then
   eval "$(zoxide init zsh)"
 fi
 
@@ -59,8 +61,9 @@ if [ -f "$HOME/.cargo/env" ]; then
 fi
 
 # ---
-if [ -d "/opt/nvim/bin" ]; then
+if [ -x "/opt/nvim/bin/nvim" ]; then
   export PATH="$PATH:/opt/nvim/bin"
+  export MANPAGER="nvim +Man!"
 fi
 
 # ---

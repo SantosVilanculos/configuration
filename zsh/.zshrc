@@ -111,13 +111,17 @@ alias free='free -m'
 alias grep='grep --color=auto'
 
 # ---
-alias cd='z'
+if [ -x "/usr/bin/zoxide" ] || [ -x "$HOME/.local/bin/zoxide" ]; then
+  alias cd="z"
+fi
 
 # ---
-alias ls='eza -al --color=always --group-directories-first'
-alias la='eza -a --color=always --group-directories-first'
-alias ll='eza -l --color=always --group-directories-first'
-alias lt='eza -aT --color=always --group-directories-first'
+if [ -x "/usr/bin/eza" ] || [ -x "$HOME/.local/bin/eza" ]; then
+  alias ls='eza -al --color=always --group-directories-first'
+  alias la='eza -a --color=always --group-directories-first'
+  alias ll='eza -l --color=always --group-directories-first'
+  alias lt='eza -aT --color=always --group-directories-first'
+fi
 
 # ---
 alias pbcopy="xclip -selection clipboard"
@@ -128,9 +132,9 @@ alias audio="yt-dlp -f bestaudio --extract-audio --audio-format mp3 -o '%(title)
 alias video="yt-dlp -S 'vcodec:h264,fps,res:720,acodec:m4a' -o '%(title)s.%(ext)s'"
 
 # ---
-alias pest='./vendor/bin/pest'
-alias pint='./vendor/bin/pint'
-alias phpstan='./vendor/bin/phpstan'
-alias sail='./vendor/bin/sail'
-alias tinker='php artisan tinker'
+alias pest="./vendor/bin/pest"
+alias pint="./vendor/bin/pint"
+alias phpstan="./vendor/bin/phpstan"
+alias sail="./vendor/bin/sail"
+alias tinker="php artisan tinker"
 
