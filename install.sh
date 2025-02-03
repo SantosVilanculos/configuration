@@ -37,7 +37,7 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
 
   ln -fns "$WORKDIR/nvim" "$HOME/.config/nvim"
 
-  if [ -f /usr/local/bin/mailpit ]; then
+  if [ -x /usr/local/bin/mailpit ]; then
     sudo ln -fns "$WORKDIR/mailpit/mailpit.service" "/etc/systemd/system/mailpit.service"
     sudo systemctl enable mailpit.service
     sudo systemctl start mailpit.service
