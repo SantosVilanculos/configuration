@@ -1,0 +1,8 @@
+app.zen_browser.zen
+com.mattjakeman.ExtensionManager
+com.obsproject.Studio
+fr.handbrake.ghb
+it.mijorus.gearlever
+org.inkscape.Inkscape
+org.kde.kdenlive
+org.telegram.desktop
