@@ -69,8 +69,7 @@
     //
     "files.associations": {
         "*.embeddedhtml": "html",
-        ".env*": "dotenv",
-        "*.qss": "css"
+        ".env*": "dotenv"
     },
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -78,11 +77,9 @@
     "emmet.triggerExpansionOnTab": true,
     "emmet.syntaxProfiles": {
         "blade": "html",
-        "qss": "css"
     },
     "emmet.includeLanguages": {
         "blade": "html",
-        "qss": "css"
     },
     //
     "blade.format.enable": true,
