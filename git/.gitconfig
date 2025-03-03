@@ -4,8 +4,8 @@ unstage = reset HEAD
 undo-commit = reset --soft HEAD^
 
 [core]
-; editor = code --wait
-editor = nvim
+editor = code --wait
+
 
 [user]
 name = "Santos Vilanculos"
