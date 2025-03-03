@@ -141,6 +141,8 @@
     "codesnap.realLineNumbers": false,
     // ritwickdey.liveserver
     "liveServer.settings.NoBrowser": true,
+    // ziglang.vscode-zig
+    "zig.zls.enabled": "on",
     // vscodevim.vim
     "vim.easymotion": true,
     "vim.hlsearch": true,
