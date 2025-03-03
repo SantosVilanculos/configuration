@@ -145,5 +145,132 @@
     "codesnap.realLineNumbers": true,
     // ritwickdey.liveserver
     "liveServer.settings.NoBrowser": true,
+    // vscodevim.vim
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.textwidth": 120,
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Tab>",
+            ],
+            "after": [
+                ">",
+                "g",
+                "v"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<S-Tab>",
+            ],
+            "after": [
+                "<",
+                "g",
+                "v"
+            ],
+            "silent": true
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u",
+            ],
+            "commands": [
+                "undo",
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<C-r>",
+            ],
+            "commands": [
+                "redo",
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<leader>",
+                "<leader>"
+            ],
+            "commands": [
+                "workbench.action.quickOpen",
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<S-k>",
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<C-a>",
+            ],
+            "after": [
+                "g",
+                "g",
+                "<S-v>",
+                "G"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "[",
+                "d",
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "]",
+                "d",
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ],
+            "silent": true
+        },
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-d>": false,
+        "<C-f>": false,
+        "<C-h>": false,
+        "<C-p>": false,
+        "<C-space>": false,
+        "<C-w>": false,
+        "<C-y>": false,
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 2
+    },
     // ...
 }
