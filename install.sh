@@ -33,7 +33,7 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
   ln -fns "$WORKDIR/ghostty" "$HOME/.config/ghostty"
 
   mkdir -p "$HOME/.config/Code/User"
-  ln -fns "$WORKDIR/Code/User/settings.json" "$HOME/.config/Code/User/settings.json"
+  ln -fns "$WORKDIR/code/settings.json" "$HOME/.config/Code/User/settings.json"
 
   ln -fns "$WORKDIR/nvim" "$HOME/.config/nvim"
 
@@ -48,5 +48,5 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
 
 elif [[ "$OSTYPE" == cygwin* || "$OSTYPE" == msys* ]]; then
   mkdir -p "$HOME/AppData/Roaming/Code/User"
-  ln -fns "$WORKDIR/Code/User/settings.json" "$HOME/AppData/Roaming/Code/User/settings.json"
+  ln -fns "$WORKDIR/code/settings.json" "$HOME/AppData/Roaming/Code/User/settings.json"
 fi
