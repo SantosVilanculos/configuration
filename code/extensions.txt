@@ -14,14 +14,12 @@ christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 cierra.livewire-vscode
 cstrap.python-snippets
-damms005.devdb
 davidanson.vscode-markdownlint
 devsense.composer-php-vscode
 devsense.intelli-php-vscode
 devsense.phptools-vscode
 devsense.profiler-php-vscode
 donjayamanne.githistory
-donjayamanne.python-environment-manager
 dotenv.dotenv-vscode
 ecmel.vscode-html-css
 editorconfig.editorconfig
@@ -33,7 +31,6 @@ foxundermoon.shell-format
 github.copilot
 github.copilot-chat
 github.vscode-github-actions
-glitchbl.laravel-create-view
 goopware.raythis
 gruntfuggly.todo-tree
 heybourn.headwind
