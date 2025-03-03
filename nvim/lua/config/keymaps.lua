@@ -15,4 +15,4 @@ vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true, desc = "I
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv'", { noremap = true, silent = true, desc = "Move selection down a line" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv'", { noremap = true, silent = true, desc = "Move selection up a line" })
 
-vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("i", "jj", "<ESC>")
