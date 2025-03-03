@@ -133,14 +133,12 @@
     // ms-python.black-formatter
     "black-formatter.importStrategy": "fromEnvironment",
     // adpyke.codesnap
-    "codesnap.containerPadding": "3.875rem" /* 62px */,
+    "codesnap.containerPadding": "0",
     "codesnap.transparentBackground": true,
-    // "codesnap.backgroundColor": "#ff3d00",
-    // "codesnap.showWindowTitle": true,
     "codesnap.roundedCorners": false,
     "codesnap.showWindowControls": false,
-    "codesnap.showLineNumbers": false,
-    "codesnap.realLineNumbers": true,
+    "codesnap.showLineNumbers": true,
+    "codesnap.realLineNumbers": false,
     // ritwickdey.liveserver
     "liveServer.settings.NoBrowser": true,
     // vscodevim.vim
