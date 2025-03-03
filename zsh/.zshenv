@@ -7,21 +7,17 @@ fi
 export TERM="xterm-256color"
 export WINIT_X11_SCALE_FACTOR=1
 
-if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
-  export QT_QPA_PLATFORM=xcb
+# if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+#     export QT_QPA_PLATFORM=xcb
+# fi
+
+if [ -x "/usr/bin/nvim" ]; then
+  export MANPAGER="nvim +Man!"
 fi
 
 # ---
 if [ -d "/usr/sbin" ]; then
   export PATH="$PATH:/usr/sbin"
-fi
-
-if [ -d "$HOME/.bin" ]; then
-  export PATH="$PATH:$HOME/.bin"
-fi
-
-if [ -d "$HOME/.local/bin" ]; then
-  export PATH="$PATH:$HOME/.local/bin"
 fi
 
 if [ -d "/var/lib/flatpak/exports/bin" ]; then
@@ -56,14 +52,8 @@ if [ -d "$HOME/.pyenv/bin" ]; then
 fi
 
 # ---
-if [ -f "$HOME/.cargo/env" ]; then
+if [ -s "$HOME/.cargo/env" ]; then
   source "$HOME/.cargo/env"
-fi
-
-# ---
-if [ -x "/opt/nvim/bin/nvim" ]; then
-  export PATH="$PATH:/opt/nvim/bin"
-  export MANPAGER="nvim +Man!"
 fi
 
 # ---
