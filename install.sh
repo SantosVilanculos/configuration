@@ -2,8 +2,6 @@
 
 WORKDIR=$(dirname $(realpath "$0"))
 
-ln -fns "$WORKDIR/bash/.bashenv" "$HOME/.bashenv"
-ln -fns "$WORKDIR/bash/.bashrc" "$HOME/.bashrc"
 
 mkdir -p "$HOME/.local/bin"
 chmod +x "$WORKDIR/bin/update"
