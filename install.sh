@@ -17,7 +17,6 @@ if [[ "$OSTYPE" == linux-android* || "$OSTYPE" == linux-gnu* ]]; then
 fi
 
 if [[ "$OSTYPE" == linux-gnu* ]]; then
-
   ln -fns "$WORKDIR/rofi" "$HOME/.config/rofi"
   ln -fns "$WORKDIR/i3" "$HOME/.config/i3"
 
@@ -37,7 +36,7 @@ if [[ "$OSTYPE" == linux-gnu* ]]; then
   mkdir -p "$HOME/.nvm"
   ln -fns "$WORKDIR/nvm/default-packages" "$HOME/.nvm/default-packages"
 
-  if [ -x /usr/local/bin/mailpit ]; then
+  if [ -x "/usr/local/bin/mailpit" ] || [ -x "$HOME/.local/bin/mailpit" ]; then
     sudo ln -fns "$WORKDIR/mailpit/mailpit.service" "/etc/systemd/system/mailpit.service"
     sudo systemctl enable mailpit.service
     sudo systemctl start mailpit.service
