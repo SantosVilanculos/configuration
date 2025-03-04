@@ -47,6 +47,26 @@
     "editor.suggestOnTriggerCharacters": false,
     "editor.tabCompletion": "on",
     "editor.tokenColorCustomizations": {
+        "[*Light*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#000"
+                    }
+                }
+            ]
+        },
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#fff"
+                    }
+                }
+            ]
+        },
         "textMateRules": [
             {
                 "scope": "comment",
@@ -270,5 +290,10 @@
     "extensions.experimental.affinity": {
         "vscodevim.vim": 2
     },
+    // be5invis.vscode-custom-css
+    "vscode_custom_css.imports": [
+        "file://${userHome}/configuration/code/index.css",
+        "file://${userHome}/configuration/code/index.js"
+    ],
     // ...
 }

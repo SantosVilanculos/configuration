@@ -5,6 +5,7 @@ akamud.vscode-theme-onelight
 amiralizadeh9480.laravel-extra-intellisense
 austenc.laravel-blade-spacer
 batisteo.vscode-django
+be5invis.vscode-custom-css
 bierner.markdown-checkbox
 bierner.markdown-emoji
 bierner.markdown-preview-github-styles
