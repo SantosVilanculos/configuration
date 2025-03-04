@@ -147,8 +147,10 @@ if [ -x "/usr/bin/eza" ] || [ -x "$HOME/.local/bin/eza" ]; then
 fi
 
 # ---
-alias pbcopy="xclip -selection clipboard"
-alias pbpaste="xclip -selection clipboard -o"
+if [ -x "/usr/bin/xclip" ]; then
+	alias pbcopy="xclip -selection clipboard"
+	alias pbpaste="xclip -selection clipboard -o"
+fi
 
 # ---
 alias audio="yt-dlp -f bestaudio --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
@@ -162,3 +164,5 @@ alias rector="./vendor/bin/rector"
 alias sail="./vendor/bin/sail"
 alias tinker="php artisan tinker"
 
+# ---
+alias wip='git commit -m "wip"'
