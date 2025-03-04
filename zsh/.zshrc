@@ -135,15 +135,15 @@ fi
 
 # ---
 if [ -x "/usr/bin/zoxide" ] || [ -x "$HOME/.local/bin/zoxide" ]; then
-  alias cd="z"
+	alias cd="z"
 fi
 
 # ---
 if [ -x "/usr/bin/eza" ] || [ -x "$HOME/.local/bin/eza" ]; then
-  alias ls='eza -al --color=always --group-directories-first'
-  alias la='eza -a --color=always --group-directories-first'
-  alias ll='eza -l --color=always --group-directories-first'
-  alias lt='eza -aT --color=always --group-directories-first'
+	alias ls='eza -al --color=always --group-directories-first'
+	alias la='eza -a --color=always --group-directories-first'
+	alias ll='eza -l --color=always --group-directories-first'
+	alias lt='eza -aT --color=always --group-directories-first'
 fi
 
 # ---
