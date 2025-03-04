@@ -6,9 +6,8 @@ ln -fns "$WORKDIR/bash/.bashenv" "$HOME/.bashenv"
 ln -fns "$WORKDIR/bash/.bashrc" "$HOME/.bashrc"
 
 mkdir -p "$HOME/.local/bin"
-chmod +x $WORKDIR/bin/{favicon,update}
+chmod +x "$WORKDIR/bin/update"
 ln -fns "$WORKDIR/bin/update" "$HOME/.local/bin/update"
-ln -fns "$WORKDIR/bin/favicon" "$HOME/.local/bin/favicon"
 
 ln -fns "$WORKDIR/git/.gitconfig" "$HOME/.gitconfig"
 
@@ -18,8 +17,6 @@ if [[ "$OSTYPE" == linux-android* || "$OSTYPE" == linux-gnu* ]]; then
 fi
 
 if [[ "$OSTYPE" == linux-gnu* ]]; then
-  chmod +x $WORKDIR/bin/volume
-  ln -fns "$WORKDIR/bin/volume" "$HOME/.local/bin/volume"
 
   ln -fns "$WORKDIR/rofi" "$HOME/.config/rofi"
   ln -fns "$WORKDIR/i3" "$HOME/.config/i3"

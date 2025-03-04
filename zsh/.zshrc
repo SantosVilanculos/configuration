@@ -111,6 +111,29 @@ alias free='free -m'
 alias grep='grep --color=auto'
 
 # ---
+if [ -x "/usr/bin/amixer" ]; then
+	volume() {
+		if [[ $1 =~ ^[0-9]+$ ]] && [[ $1 -ge 0 ]] && [ $1 -le 100 ]; then
+			amixer sset Master "$1%"
+		elif [[ "$1" == "mute" || "$1" == "unmute" ]]; then
+			amixer sset Master "$1"
+		else
+			echo ""
+		fi
+	}
+fi
+
+if [ -x "/usr/bin/convert" ]; then
+	favicon() {
+		if [ -f "$1" ]; then
+			convert "$1" -define icon:auto-resize="256,128,96,64,48,32,16" ./favicon.ico
+		else
+			echo ""
+		fi
+	}
+fi
+
+# ---
 if [ -x "/usr/bin/zoxide" ] || [ -x "$HOME/.local/bin/zoxide" ]; then
   alias cd="z"
 fi
