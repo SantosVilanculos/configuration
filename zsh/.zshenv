@@ -16,6 +16,10 @@ if [ -x "/usr/bin/nvim" ]; then
 fi
 
 # ---
+if [ -d "$HOME/.local/bin" ]; then
+  export PATH="$PATH:$HOME/.local/bin"
+fi
+
 if [ -d "/usr/sbin" ]; then
   export PATH="$PATH:/usr/sbin"
 fi
