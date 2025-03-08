@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+if [ -f "$1" ]; then
+  convert "$1" -define icon:auto-resize="256,128,96,64,48,32,16" ./favicon.ico
+fi
