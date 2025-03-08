@@ -1,0 +1,66 @@
+# ---
+export WINIT_X11_SCALE_FACTOR="1.0"
+
+export TERM="xterm-256color"
+
+if [ -x "/usr/bin/nvim" ]; then
+  export MANPAGER="nvim +Man!"
+fi
+
+if [ -d "$HOME/.bin" ]; then
+  export PATH="$PATH:$HOME/.bin"
+fi
+
+if [ -d "$HOME/.local/bin" ]; then
+  export PATH="$PATH:$HOME/.local/bin"
+fi
+
+if [ -d "/usr/sbin" ]; then
+  export PATH="$PATH:/usr/sbin"
+fi
+
+if [ -d "/var/lib/flatpak/exports/bin" ]; then
+  export PATH="$PATH:/var/lib/flatpak/exports/bin"
+fi
+
+# ---
+alias df='df -h'
+alias free='free -m'
+alias grep='grep --color=auto'
+
+# ---
+if [ -d "$HOME/.config/composer/vendor/bin" ]; then
+  export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+fi
+
+# ---
+if [ -s "$HOME/.nvm/nvm.sh" ]; then
+  source "$HOME/.nvm/nvm.sh"
+fi
+
+if [ -s "$HOME/.nvm/bash_completion" ]; then
+  source "$HOME/.nvm/bash_completion"
+fi
+
+# ---
+if [ -d "$HOME/.pyenv/bin" ]; then
+  export PATH="$PATH:$HOME/.pyenv/bin"
+
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
+
+# ---
+if [ -s "$HOME/.cargo/env" ]; then
+  source "$HOME/.cargo/env"
+fi
+
+# ---
+if [ -s "/usr/share/doc/fzf/examples/key-bindings.bash" ]; then
+  source "/usr/share/doc/fzf/examples/key-bindings.bash"
+fi
+
+# ---
+if [ -s "/usr/share/doc/fzf/examples/completion.bash" ]; then
+  source "/usr/share/doc/fzf/examples/completion.bash"
+fi

@@ -1,0 +1,295 @@
+{
+    "update.mode": "none",
+    "telemetry.telemetryLevel": "off",
+    //
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "toggle",
+    "window.title": "${activeEditorShort}",
+    //
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.tree.enableStickyScroll": false,
+    //
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always",
+        "source.sortImports": "always",
+        "source.organizeImports": "always",
+    },
+    "editor.codeLens": false,
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontSize": 17.33,
+    "editor.formatOnSave": true,
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.lineHeight": 24,
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "on"
+    },
+    "editor.quickSuggestionsDelay": 0,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.scrollBeyondLastLine": false,
+    "editor.snippetSuggestions": "bottom",
+    "editor.stickyScroll.enabled": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.tabCompletion": "on",
+    "editor.tokenColorCustomizations": {
+        "[*Light*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#000"
+                    }
+                }
+            ]
+        },
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": "ref.matchtext",
+                    "settings": {
+                        "foreground": "#fff"
+                    }
+                }
+            ]
+        },
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    //
+    "breadcrumbs.enabled": false,
+    //
+    "explorer.compactFolders": false,
+    //
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "terminal.integrated.fontSize": 17.33,
+    //
+    "git.autofetch": "all",
+    //
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        ".env*": "dotenv"
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    //
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.syntaxProfiles": {
+        "blade": "html",
+    },
+    "emmet.includeLanguages": {
+        "blade": "html",
+    },
+    //
+    "blade.format.enable": true,
+    "python.analysis.fixAll": [
+        "source.convertImportFormat",
+        "source.unusedImports"
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    //
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+        "editor.autoClosingBrackets": "always"
+    },
+    "[css][html][javascript][markdown][scss][typescript][vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "open-southeners.laravel-pint"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    // bmewburn.vscode-intelephense-client
+    // devsense.phptools-vscode
+    "php.suggest.basic": false,
+    // christian-kohler.path-intellisense
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+    // bradlc.vscode-tailwindcss
+    "tailwindCSS.emmetCompletions": true,
+    // mehedidracula.php-namespace-resolver
+    "namespaceResolver.sortOnSave": false,
+    "namespaceResolver.autoSort": false,
+    // pkief.material-icon-theme
+    "material-icon-theme.folders.theme": "classic",
+    // streetsidesoftware.code-spell-checker
+    // streetsidesoftware.code-spell-checker-portuguese
+    "cSpell.language": "en-GB,en-US,pt-PT,lorem",
+    "cSpell.enabledFileTypes": {
+        "*": true
+    },
+    "cSpell.useGitignore": false,
+    // dotenv.dotenv-vscode
+    "dotenv.enableAutocloaking": false,
+    // open-southeners.laravel-pint
+    "laravel-pint.enable": true,
+    "laravel-pint.fallbackToGlobalBin": false,
+    // ms-python.black-formatter
+    "black-formatter.importStrategy": "fromEnvironment",
+    // adpyke.codesnap
+    "codesnap.containerPadding": "0",
+    "codesnap.transparentBackground": true,
+    "codesnap.roundedCorners": false,
+    "codesnap.showWindowControls": false,
+    "codesnap.showLineNumbers": true,
+    "codesnap.realLineNumbers": false,
+    // ritwickdey.liveserver
+    "liveServer.settings.NoBrowser": true,
+    // ziglang.vscode-zig
+    "zig.zls.enabled": "on",
+    // vscodevim.vim
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.textwidth": 120,
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Tab>",
+            ],
+            "after": [
+                ">",
+                "g",
+                "v"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<S-Tab>",
+            ],
+            "after": [
+                "<",
+                "g",
+                "v"
+            ],
+            "silent": true
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u",
+            ],
+            "commands": [
+                "undo",
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<C-r>",
+            ],
+            "commands": [
+                "redo",
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<leader>",
+                "<leader>"
+            ],
+            "commands": [
+                "workbench.action.quickOpen",
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<S-k>",
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<C-a>",
+            ],
+            "after": [
+                "g",
+                "g",
+                "<S-v>",
+                "G"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "[",
+                "d",
+            ],
+            "commands": [
+                "editor.action.marker.prev"
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "]",
+                "d",
+            ],
+            "commands": [
+                "editor.action.marker.next"
+            ],
+            "silent": true
+        },
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-d>": false,
+        "<C-f>": false,
+        "<C-h>": false,
+        "<C-p>": false,
+        "<C-space>": false,
+        "<C-w>": false,
+        "<C-y>": false,
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 2
+    },
+    // ...
+}

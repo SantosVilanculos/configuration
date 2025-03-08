@@ -1,0 +1,28 @@
+[alias]
+lk = log --graph --topo-order --abbrev-commit --date=short --decorate --all --boundary --pretty=format:'%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset'
+unstage = reset HEAD
+undo-commit = reset --soft HEAD^
+
+[core]
+editor = code --wait
+
+[credential]
+helper = /usr/local/bin/git-credential-manager
+credentialStore = secretservice
+
+[init]
+defaultBranch = main
+
+[user]
+name = "Santos Vilanculos"
+email = "95357132+SantosVilanculos@users.noreply.github.com"
+
+[pull]
+rebase = false
+
+[push]
+autoSetupRemote = true
+default = current
+
+[rerere]
+enabled = true

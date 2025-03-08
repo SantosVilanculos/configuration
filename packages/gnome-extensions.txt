@@ -1,6 +1,0 @@
-dash-to-dock@micxgx.gmail.com
-hidetopbar@mathieu.bidon.ca
-appindicatorsupport@rgcjonas.gmail.com
-instantworkspaceswitcher@amalantony.net
-places-menu@gnome-shell-extensions.gcampax.github.com
-workspace-indicator@gnome-shell-extensions.gcampax.github.com
