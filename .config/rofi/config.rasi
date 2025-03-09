@@ -6,6 +6,5 @@ configuration{
     terminal: "alacritty";
     drun-display-format: "{icon} {name}";
     disable-history: false;
-    side-bar-mode: true;
 }
 @theme "glue_pro_blue"
