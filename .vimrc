@@ -1,15 +1,18 @@
 set t_Co=256
+set termguicolors
 syntax enable
-set incsearch
+colorscheme onedark
 
-set number
-set relativenumber
+set nobackup
+set noswapfile
 
 set clipboard=unnamedplus
 set paste
 
-set nobackup
-set noswapfile
+set incsearch
+
+set number
+set relativenumber
 
 set expandtab
 set smarttab
