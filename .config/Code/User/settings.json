@@ -1,6 +1,7 @@
 {
-    "update.mode": "none",
     "telemetry.telemetryLevel": "off",
+    "update.mode": "none",
+    "extensions.autoUpdate": false,
     //
     "window.commandCenter": false,
     "window.menuBarVisibility": "toggle",
