@@ -159,7 +159,7 @@
     "codesnap.transparentBackground": true,
     "codesnap.roundedCorners": false,
     "codesnap.showWindowControls": false,
-    "codesnap.showLineNumbers": true,
+    "codesnap.showLineNumbers": false,
     "codesnap.realLineNumbers": false,
     // ritwickdey.liveserver
     "liveServer.settings.NoBrowser": true,
