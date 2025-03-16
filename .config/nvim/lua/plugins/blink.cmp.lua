@@ -1,6 +1,8 @@
 return {
   {
     "saghen/blink.cmp",
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
     opts = {
       keymap = {
         preset = "super-tab",
@@ -13,6 +15,11 @@ return {
           "select_prev",
           "snippet_backward",
           "fallback",
+        },
+      },
+      completion = {
+        menu = {
+          auto_show = false,
         },
       },
     },
