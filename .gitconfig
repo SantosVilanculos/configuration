@@ -6,10 +6,6 @@ undo-commit = reset --soft HEAD^
 [core]
 editor = code --wait
 
-[credential]
-helper = /usr/local/bin/git-credential-manager
-credentialStore = secretservice
-
 [init]
 defaultBranch = main
 
