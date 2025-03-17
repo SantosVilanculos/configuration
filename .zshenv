@@ -8,10 +8,10 @@ export TERM="xterm-256color"
 export WINIT_X11_SCALE_FACTOR=1
 
 # if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
-#     export QT_QPA_PLATFORM=xcb
+#     export QT_QPA_PLATFORM="xcb"
 # fi
 
-if [ -x "/usr/bin/nvim" ]; then
+if [ -n "$(command -v nvim)" ]; then
   export MANPAGER="nvim +Man!"
 fi
 
@@ -29,7 +29,7 @@ if [ -d "/var/lib/flatpak/exports/bin" ]; then
 fi
 
 # ---
-if [ -x "$HOME/.local/bin/zoxide" ]; then
+if [ -n "$(command -v zoxide)" ]; then
   eval "$(zoxide init zsh)"
 fi
 
@@ -50,7 +50,9 @@ fi
 # ---
 if [ -d "$HOME/.pyenv/bin" ]; then
   export PATH="$PATH:$HOME/.pyenv/bin"
+fi
 
+if [ -n "$(command -v pyenv)" ]; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi

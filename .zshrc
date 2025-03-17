@@ -111,12 +111,12 @@ alias free='free -m'
 alias grep='grep --color=auto'
 
 # ---
-if [ -x "/usr/bin/zoxide" ] || [ -x "$HOME/.local/bin/zoxide" ]; then
+if [ -n "$(command -v z)" ]; then
   alias cd="z"
 fi
 
 # ---
-if [ -x "/usr/bin/eza" ] || [ -x "$HOME/.local/bin/eza" ]; then
+if [ -n "$(command -v eza)" ]; then
   alias ls='eza -al --color=always --group-directories-first'
   alias la='eza -a --color=always --group-directories-first'
   alias ll='eza -l --color=always --group-directories-first'
@@ -124,14 +124,16 @@ if [ -x "/usr/bin/eza" ] || [ -x "$HOME/.local/bin/eza" ]; then
 fi
 
 # ---
-if [ -x "/usr/bin/xclip" ]; then
+if [ -n "$(command -v xclip)" ]; then
   alias pbcopy="xclip -selection clipboard"
   alias pbpaste="xclip -selection clipboard -o"
 fi
 
 # ---
-alias audio="yt-dlp -f bestaudio --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
-alias video="yt-dlp -S 'vcodec:h264,fps,res:720,acodec:m4a' -o '%(title)s.%(ext)s'"
+if [ -n "$(command -v yt-dlp)" ]; then
+  alias audio="yt-dlp -f bestaudio --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
+  alias video="yt-dlp -S 'vcodec:h264,fps,res:720,acodec:m4a' -o '%(title)s.%(ext)s'"
+fi
 
 # ---
 alias pest="./vendor/bin/pest"
@@ -144,11 +146,3 @@ alias tinker="php artisan tinker"
 # ---
 alias wip='git commit -m "wip"'
 
-# ---
-calc() {
-  node -e "console.log($1)"
-}
-# ---
-bkp() {
-  mv "$1" "$1.bkp"
-}
