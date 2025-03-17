@@ -30,6 +30,7 @@
     "editor.gotoLocation.multipleImplementations": "goto",
     "editor.gotoLocation.multipleReferences": "goto",
     "editor.lineHeight": 24,
+    "editor.lineNumbers": "relative",
     "editor.linkedEditing": true,
     "editor.minimap.enabled": false,
     "editor.quickSuggestions": {
