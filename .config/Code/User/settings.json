@@ -269,26 +269,6 @@
             ],
             "silent": true
         },
-        {
-            "before": [
-                "<leader>",
-                "e"
-            ],
-            "commands": [
-                "workbench.action.toggleSidebarVisibility",
-            ],
-            "silent": true
-        },
-        {
-            "before": [
-                "<leader>",
-                "<leader>"
-            ],
-            "commands": [
-                "workbench.action.quickOpen",
-            ],
-            "silent": true
-        },
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
