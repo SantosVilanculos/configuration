@@ -42,6 +42,7 @@
         80,
         120
     ],
+    "editor.semanticHighlighting.enabled": false,
     "editor.scrollBeyondLastLine": false,
     "editor.snippetSuggestions": "bottom",
     "editor.stickyScroll.enabled": false,
