@@ -143,7 +143,7 @@
     "material-icon-theme.folders.theme": "classic",
     // streetsidesoftware.code-spell-checker
     // streetsidesoftware.code-spell-checker-portuguese
-    "cSpell.language": "en-GB,en-US,pt-PT,lorem",
+    "cSpell.language": "en-US,pt-PT,lorem",
     "cSpell.enabledFileTypes": {
         "*": true
     },
