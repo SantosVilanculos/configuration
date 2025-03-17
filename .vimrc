@@ -19,6 +19,10 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+set laststatus=1
+"set noshowmode
+"set noshowcmd 
+"set shortmess+=F
 
 
 
