@@ -26,7 +26,7 @@ return {
         },
         black = {
           inherit = true,
-          prepend_args = { "--line-length", "120" },
+          prepend_args = { "--line-length", "79" },
         },
       },
     },
