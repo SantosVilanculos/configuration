@@ -25,6 +25,7 @@ return {
         "pyright",
         "ruff",
         "isort",
+        "autoflake",
         "black",
         -- yaml
         "yaml-language-server",

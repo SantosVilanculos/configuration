@@ -2,6 +2,8 @@ return {
   {
     "stevearc/conform.nvim",
     optional = true,
+    ---@module 'conform'
+    ---@type conform.setupOpts
     opts = {
       formatters_by_ft = {
         sh = { "shfmt" },
@@ -13,13 +15,22 @@ return {
         json = { "jq" },
         lua = { "stylua" },
         php = { "pint" },
-        python = { "isort", "black" },
+        python = { "autoflake", "isort", "black" },
         typescript = { "prettier" },
         typescriptreact = { "prettier" },
         vue = { "prettier" },
         zsh = { "shfmt" },
       },
       formatters = {
+        autoflake = {
+          inherit = true,
+          prepend_args = {
+            "--remove-all-unused-imports",
+            "--recursive",
+            "--expand-star-imports",
+            "--in-place",
+          },
+        },
         isort = {
           inherit = true,
           prepend_args = { "--profile", "black" },
