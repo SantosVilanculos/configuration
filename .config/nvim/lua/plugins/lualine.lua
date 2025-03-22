@@ -1,8 +1,15 @@
 return {
   {
     "nvim-lualine/lualine.nvim",
-    opts = function(_, opts)
-      opts.sections.lualine_z = {}
-    end,
+    opts = {
+      options = {
+        theme = "onedark",
+        section_separators = "",
+        component_separators = "",
+      },
+      sections = {
+        lualine_z = {},
+      },
+    },
   },
 }
