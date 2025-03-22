@@ -127,7 +127,7 @@
         "editor.defaultFormatter": "open-southeners.laravel-pint"
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
     // bmewburn.vscode-intelephense-client
     // devsense.phptools-vscode
@@ -280,6 +280,7 @@
         "<C-space>": false,
         "<C-w>": false,
         "<C-y>": false,
+        "<C-j>": false,
     },
     "extensions.experimental.affinity": {
         "vscodevim.vim": 2
