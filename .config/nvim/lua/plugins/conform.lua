@@ -15,7 +15,7 @@ return {
         json = { "jq" },
         lua = { "stylua" },
         php = { "pint" },
-        python = { "autoflake", "isort", "black" },
+        python = { "autoflake", "isort", "black", lsp_format = "never" },
         typescript = { "prettier" },
         typescriptreact = { "prettier" },
         vue = { "prettier" },
