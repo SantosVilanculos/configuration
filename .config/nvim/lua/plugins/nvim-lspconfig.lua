@@ -9,8 +9,6 @@ return {
               plugins = {
                 autopep8 = { enabled = false },
                 pycodestyle = { enabled = false },
-                black = { enabled = true },
-                isort = { enabled = true, profile = "black" },
               },
             },
           },
