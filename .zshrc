@@ -111,9 +111,9 @@ alias free='free -m'
 alias grep='grep --color=auto'
 
 # ---
-if [ -n "$(command -v z)" ]; then
-  alias cd="z"
-fi
+# if [ -n "$(command -v z)" ]; then
+#   alias cd="z"
+# fi
 
 # ---
 if [ -n "$(command -v eza)" ]; then
