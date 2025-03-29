@@ -111,9 +111,9 @@ alias free='free -m'
 alias grep='grep --color=auto'
 
 # ---
-# if [ -n "$(command -v z)" ]; then
-#   alias cd="z"
-# fi
+if [ -n "$(command -v z)" ]; then
+  alias cd="z"
+fi
 
 # ---
 if [ -n "$(command -v eza)" ]; then
@@ -144,5 +144,4 @@ alias sail="./vendor/bin/sail"
 alias tinker="php artisan tinker"
 
 # ---
-alias wip='git commit -m "wip"'
-
+alias wip="git commit -m 'wip'"
