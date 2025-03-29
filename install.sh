@@ -10,6 +10,11 @@ if [[ "$OSTYPE" == linux-android* ]]; then
   ln -fnsv "$WORKDIR/.local/bin/update" "$HOME/.local/bin/update"
 
 elif [[ "$OSTYPE" == linux-gnu* ]]; then
+  mkdir -p "$HOME/.config/Code/User"
+  mkdir -p "$HOME/.config/gh"
+  mkdir -p "$HOME/.nvm"
+  mkdir -p "$HOME/.vim"
+
   stow -d "$WORKDIR" -t "$HOME" -R -v "./"
 
 elif [[ "$OSTYPE" == cygwin* || "$OSTYPE" == msys* ]]; then
