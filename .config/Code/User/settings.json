@@ -287,5 +287,21 @@
     },
     // esbenp.prettier-vscode
     "prettier.requireConfig": true,
+    // ecmel.vscode-html-css
+    "css.enabledLanguages": [
+        "blade",
+        "html",
+        "javascript",
+        "javascriptreact",
+        "php",
+        "typescript",
+        "typescriptreact",
+        "vue",
+    ],
+    "css.styleSheets": [
+        "node_modules/@tabler/core/dist/css/*.css",
+        "resources/**/*.{css,scss}",
+        "src/**/*.{css,scss}",
+    ]
     // ...
 }
