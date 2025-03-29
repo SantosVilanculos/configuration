@@ -285,5 +285,7 @@
     "extensions.experimental.affinity": {
         "vscodevim.vim": 2
     },
+    // esbenp.prettier-vscode
+    "prettier.requireConfig": true,
     // ...
 }
